@@ -14,6 +14,7 @@ You use this by making a GET request to `{host}/<your-url-goes-here>`.
 
 For example, if the app is running on `example.com`, making a GET request to `http://example.com/https://google.com` would return a JSON containing a preview of `https://google.com`.
 
+You can access the service online via `https://url-previewer.herokuapp.com`.
 
 
 ### Setup 
