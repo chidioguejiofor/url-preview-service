@@ -70,7 +70,7 @@ class URLPreviewParser {
 
     async mainImage() {
         return await this.PAGE.evaluate(async () => {
-            const metaQuery = 'meta[property="og:og:image"], meta[name="twitter:image"]'
+            const metaQuery = 'meta[property="og:og:image"], meta[name="twitter:image"], meta[name="twitter:image:src"]'
             let image = await document.querySelector(metaQuery);
             if (image && image.contentlength > 0) {
                 return image.content;
